@@ -40,20 +40,6 @@ This is my first project built for getting into graphics programming, so the cod
 
 This repo does **not** vendor its dependencies — you'll need to fetch them yourself into a `lib/` folder that sits two directories above the project root (i.e. alongside the parent of this repo), matching the paths in `CMakeLists.txt`:
 
-```
-lib/
-├── GLFW/
-│   ├── include/GLFW/       # glfw3.h, glfw3native.h
-│   └── lib/                # glfw3.lib (+ glfw3.dll if using the dynamic build)
-├── glm/
-│   └── glm/                # GLM headers
-├── imgui/                  # Dear ImGui source, including backends/
-├── json/
-│   └── nlohmann/json.hpp   # nlohmann/json single header
-└── stb/
-    └── stb_image.h
-```
-
 Steps:
 
 1. **GLFW** — download the prebuilt Windows binaries from [glfw.org/download.html](https://www.glfw.org/download.html). Use the `include/` folder as-is, and copy the `lib-vc2022` (or your matching MSVC toolset) folder's contents into `lib/GLFW/lib/`.
