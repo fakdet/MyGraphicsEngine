@@ -1,0 +1,12 @@
+# Build output
+/build/
+
+# Runtime-generated ImGui state
+imgui.ini
+
+# IDE-specific paths (contains your local username/paths)
+.vscode/
+
+# OS junk
+Thumbs.db
+.DS_Store
